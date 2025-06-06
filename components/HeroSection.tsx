@@ -19,12 +19,16 @@ const HeroSection = () => {
 />
 
 
-        <p
+        {/* <p
           className="text-xl sm:text-2xl text-[#FDF6E3] font-light italic mt-2 mb-4"
           style={{ fontFamily: '"Dancing Script", cursive' }}
         >
           From ‘maybes’ to ‘memories’!
-        </p>
+        </p> */}
+        <p className="text-xl sm:text-2xl text-[#FDF6E3] font-light italic mt-2 mb-4 font-sans">
+  From ‘maybes’ to ‘memories’!
+</p>
+
         <p className="text-5xl my-8 font-bold -tracking-normal leading-16">
           Connect with strangers who’d rather chase sunsets, crash on events or
           vibe at a cricket match.
