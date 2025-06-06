@@ -11,11 +11,11 @@ const HeroSection = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-items-center my-20 bg-transparent max-w-7xl mx-auto">
       <div className="px-7">
 <Image
-  src="/kita2.png"
+  src="/kita3.png"
   alt="KITA Logo"
-  height={50} // 96px = text-8xl
-  width={120} // adjust as needed based on image aspect ratio
-  className="mb-4 object-contain"
+  height={50}
+  width={210}
+  className="mb-0 object-contain align-middle"
 />
 
 
@@ -25,7 +25,7 @@ const HeroSection = () => {
         >
           From ‘maybes’ to ‘memories’!
         </p> */}
-        <p className="text-xl sm:text-2xl text-[#FDF6E3] font-light italic mt-2 mb-4 font-sans">
+        <p className="text-xl sm:text-2xl text-[#FDF6E3] font-light italic mt-1 mb-4 font-sans">
   From ‘maybes’ to ‘memories’!
 </p>
 
