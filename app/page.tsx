@@ -1,11 +1,9 @@
 import HeroSection from '@/components/HeroSection';
 import Community from '@/components/Community';
 import Testimonial from '@/components/Testimonial';
-
 import ContactUs from '@/components/ContactUs';
 import Footer from '@/components/Footer';
 import ProductSection from '@/components/ProductSection';
-import TextSlider from '@/components/TextSlider';
 import { Marquee } from '@/components/magicui/marquee';
 
 import { Lora } from 'next/font/google';
@@ -17,38 +15,27 @@ const lora = Lora({
 });
 
 const socialMedia = [
-  {
-    id: 1,
-    tag: '#Instagram',
-  },
-  {
-    id: 2,
-    tag: '#Facebook',
-  },
-  {
-    id: 3,
-    image: '/sliderImage.png',
-  },
-  {
-    id: 4,
-    tag: '#LinkedIn',
-  },
-  {
-    id: 5,
-    tag: '#Twitter',
-  },
+  { id: 1, tag: 'Instagram: @kita.app' },
+  { id: 2, tag: 'Twitter / X: @kitatheapp' },
+  { id: 3, image: '/sliderImage.png' },
+  { id: 4, tag: 'LinkedIn: @kita.app' },
+  { id: 5, tag: 'Instagram: @kita.unfiltered' },
+  { id: 6, tag: 'Facebook: @kita.app' },
 ];
 
 export default function Home() {
   return (
-    <div className="bg-[#0e3c39] text-white">
+    <div className="bg-[#0e3c39] text-white scroll-smooth">
       <HeroSection />
+
       <Community />
       <Testimonial />
-      {/* <SliderPage /> */}
-      {/* <TestimonialSlider /> */}
-      <ProductSection />
-      {/* <TextSlider /> */}
+
+      {/* 👇 Add an ID here for the Explore Merch scroll target */}
+      <section id="products">
+        <ProductSection />
+      </section>
+
       <Marquee className="[--duration:20s]" pauseOnHover>
         {socialMedia.map((item, index) => (
           <div
@@ -74,8 +61,13 @@ export default function Home() {
           </div>
         ))}
       </Marquee>
+
       <ContactUs />
-      <Footer />
+
+      {/* 👇 Add an ID here for the Join the Community scroll target */}
+      <footer id="footer">
+        <Footer />
+      </footer>
     </div>
   );
 }

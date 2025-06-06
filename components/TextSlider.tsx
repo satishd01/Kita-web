@@ -32,7 +32,7 @@ const hashTags = [
   },
   {
     id: 8,
-    tag: '#KitaKulture',
+    tag: '#KitaCulture',
   },
   {
     id: 9,

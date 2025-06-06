@@ -42,7 +42,7 @@ const travelItems = [
   },
   {
     id: 8,
-    tag: '#KitaKulture',
+    tag: '#KitaCulture',
   },
   {
     id: 9,
@@ -143,7 +143,7 @@ const Community = () => {
   return (
     <div className="">
       <h1 className="text-6xl text-center max-w-2xl mx-auto font-normal ">
-        Join our happy community of travelers
+        People who ditched the word 'Awkard' packed their bags instead !
       </h1>
 
       <div className="relative my-10 w-full  py-12 gap-5 ">

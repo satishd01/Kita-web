@@ -1,14 +1,27 @@
+'use client';
+
 import React from 'react';
 import { Video } from './ui/video';
+import Image from 'next/image';
+
+
 
 const HeroSection = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-items-center my-20 bg-transparent max-w-7xl mx-auto">
       <div className="px-7">
-        <h1 className="text-8xl italic">KITA</h1>
+<Image
+  src="/kita.jpeg"
+  alt="KITA Logo"
+  height={50} // 96px = text-8xl
+  width={120} // adjust as needed based on image aspect ratio
+  className="mb-4 object-contain"
+/>
+
+
         <p
           className="text-xl sm:text-2xl text-[#FDF6E3] font-light italic mt-2 mb-4"
-          style={{ fontFamily: '"Dancing Script", cursive' }} // Calligraphic
+          style={{ fontFamily: '"Dancing Script", cursive' }}
         >
           From ‘maybes’ to ‘memories’!
         </p>
@@ -18,16 +31,25 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-wrap gap-4 mt-10">
-          <button className="bg-[#ED6D24] text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:shadow-lg transition">
+          <button
+            onClick={() =>
+              document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })
+            }
+            className="bg-[#ED6D24] text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:shadow-lg transition"
+          >
             Join the Community
           </button>
-          <button className="bg-white text-[#ED6D24] px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:shadow-lg transition">
+          <button
+            onClick={() =>
+              document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })
+            }
+            className="bg-white text-[#ED6D24] px-6 py-3 rounded-lg text-lg font-semibold shadow-md hover:shadow-lg transition"
+          >
             Explore Merch
           </button>
         </div>
       </div>
       <div className="rounded-xl overflow-hidden max-h-[800px] px-10">
-        {/* <img src="/hero.png" alt="hero" className="w-full rounded-xl" /> */}
         <Video />
       </div>
     </section>
