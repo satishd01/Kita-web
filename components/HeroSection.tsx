@@ -11,7 +11,7 @@ const HeroSection = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-items-center my-20 bg-transparent max-w-7xl mx-auto">
       <div className="px-7">
 <Image
-  src="/kita.jpeg"
+  src="/kita2.png"
   alt="KITA Logo"
   height={50} // 96px = text-8xl
   width={120} // adjust as needed based on image aspect ratio
