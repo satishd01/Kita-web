@@ -13,8 +13,8 @@ const HeroSection = () => {
 <Image
   src="/kita3.png"
   alt="KITA Logo"
-  height={80} // increased from 50
-  width={300} // increased from 210
+  height={170} // increased from 50
+  width={400} // increased from 210
   className="mb-0 object-contain align-middle"
 />
 
