@@ -55,7 +55,7 @@ const ContactUs = () => {
       </div>
       
 
-      <div className="w-[80%] md:absolute md:right-4 md:top-[40%] sm:top-[50%] md:top-[60%] lg:top-[35%] md:w-[50%] max-md:static max-md:mt-8">
+      <div className="w-[80%] absolute right-4 top-[40%] sm:top-[50%] md:top-[60%] lg:top-[35%] md:w-[50%]">
         <div className="bg-[#3d3d3d99] backdrop-blur-sm rounded-xl p-6 flex flex-col items-center shadow-md">
           <h2 className="text-4xl font-semibold text-center mb-12 text-white capitalize">
             Contact Us
