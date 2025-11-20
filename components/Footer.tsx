@@ -19,17 +19,30 @@ const Footer = () => {
           and find out!
         </h1>
 
-        <button
-          type="submit"
-          className="py-4 px-6 cursor-pointer mt-2 w-full p-2 text-white bg-[#ED6D24] rounded-lg font-semibold hover:bg-[#d65f1f] transition"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.kita_traveler&pli=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block w-full"
         >
-          Download App
-        </button>
-        <img
-          alt="download"
-          src="/GoogleApple.png"
-          className=" object-cover mt-10"
-        />
+          <button
+            type="button"
+            className="py-4 px-6 cursor-pointer mt-2 w-full p-2 text-white bg-[#ED6D24] rounded-lg font-semibold hover:bg-[#d65f1f] transition"
+          >
+            Download App
+          </button>
+        </a>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.kita_traveler&pli=1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="download"
+            src="/GoogleApple.png"
+            className="object-cover mt-10"
+          />
+        </a>
         <h1 className="text-[15rem] sm:text-[30rem]  font-semibold text-start text-[#4d5959]  italic absolute -bottom-10 sm:-bottom-42 -z-10 -left-10 ">
           KITA
         </h1>

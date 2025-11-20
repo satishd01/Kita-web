@@ -4,10 +4,12 @@ import Testimonial from '@/components/Testimonial';
 import ContactUs from '@/components/ContactUs';
 import Footer from '@/components/Footer';
 import ProductSection from '@/components/ProductSection';
+import FAQ from '@/components/FAQ'; // 1️⃣ import the new FAQ component
 import { Marquee } from '@/components/magicui/marquee';
 
 import { Lora } from 'next/font/google';
 import Image from 'next/image';
+import StandardFooter from '@/components/Standardfooter';
 
 const lora = Lora({
   subsets: ['latin'],
@@ -27,14 +29,16 @@ export default function Home() {
   return (
     <div className="bg-[#0e3c39] text-white scroll-smooth">
       <HeroSection />
-
       <Community />
       <Testimonial />
 
-      {/* 👇 Add an ID here for the Explore Merch scroll target */}
+      {/* Explore Merch section */}
       <section id="products">
         <ProductSection />
       </section>
+
+      {/* 2️⃣ drop the FAQ in between existing sections */}
+      <FAQ />
 
       <Marquee className="[--duration:20s]" pauseOnHover>
         {socialMedia.map((item, index) => (
@@ -64,9 +68,12 @@ export default function Home() {
 
       <ContactUs />
 
-      {/* 👇 Add an ID here for the Join the Community scroll target */}
+      {/* Join the Community / Footer */}
       <footer id="footer">
         <Footer />
+      </footer>
+            <footer id="footer">
+        <StandardFooter></StandardFooter>
       </footer>
     </div>
   );

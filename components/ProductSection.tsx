@@ -16,16 +16,16 @@ export default function ProductSection() {
   const carousel = useRef<HTMLDivElement>(null);
 
   const productCards: ProductCard[] = [
-    { id: 0, productName: 'Vibe Wear – T-shirt', image: '/productTshirt.png' },
-    { id: 1, productName: 'Vibe Wear – T-shirt', image: '/merchShoot1.jpg' },
-    { id: 2, productName: 'Vibe Cap – cap', image: '/productHat.png' },
-    { id: 3, productName: 'Kita Fit', image: '/productTshirt.png' },
-    { id: 4, productName: 'Vibe Kit – entire kit', image: '/productHat.png' },
+    { id: 0, productName: 'Vibe Wear – T-shirt', image: '/merch1.png' },
+    { id: 1, productName: 'Vibe Wear – T-shirt', image: '/merch2.png' },
+    { id: 2, productName: 'Vibe Cap – cap', image: '/merch3.png' },
+    { id: 3, productName: 'Kita Fit', image: '/merch4.png' },
+    { id: 4, productName: 'Vibe Kit – entire kit', image: '/merch5.png' },
     // Duplicated for infinite scroll
-    { id: 5, productName: 'Vibe Wear – T-shirt', image: '/productTshirt.png' },
-    { id: 6, productName: 'Vibe Wear – T-shirt', image: '/merchShoot1.jpg' },
-    { id: 7, productName: 'Vibe Cap – cap', image: '/productHat.png' },
-    { id: 8, productName: 'Kita Fit', image: '/productTshirt.png' },
+    { id: 5, productName: 'Vibe Wear – T-shirt', image: '/merch6.png' },
+    { id: 6, productName: 'Vibe Wear – T-shirt', image: '/merch7.jpg' },
+    { id: 7, productName: 'Vibe Cap – cap', image: '/merch8.png' },
+    { id: 8, productName: 'Kita Fit', image: '/merch9.png' },
     { id: 9, productName: 'Vibe Kit – entire kit', image: '/productHat.png' },
   ];
 
